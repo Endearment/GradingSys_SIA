@@ -7,14 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradingSys_SIA.Helpers; 
 
 namespace GradingSys_SIA
 {
     public partial class aptitudePage : Form
     {
+        private int studentId = 1; 
+
         public aptitudePage()
         {
             InitializeComponent();
+            LoadAptitudeScore(); 
+        }
+
+        private void LoadAptitudeScore()
+        {
+            string term = "Midterm"; 
+            int demerits = DatabaseHelper.GetAptitudeDemerits(studentId, term);
+            int totalPossible = 100;
+            int finalScore = totalPossible - demerits;
+
+            double gradeContribution = GradeCalculator.ComputeAptitudePercent(demerits);
+
+            
+            labelDemeritsApplied.Text = demerits.ToString();
+            labelFinalScore.Text = finalScore.ToString();
+
+            
+            circularProgressBarAptitude.Value = (int)gradeContribution;
         }
 
         private void label13_Click(object sender, EventArgs e)
@@ -22,31 +43,6 @@ namespace GradingSys_SIA
             this.Hide();
             sideBarPanel mainPage = new sideBarPanel();
             mainPage.Show();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

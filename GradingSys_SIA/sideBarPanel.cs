@@ -90,7 +90,8 @@ namespace GradingSys_SIA
 
         private void label2_Click(object sender, EventArgs e)
         {
-            loadform(new attendancePage());
+            int studentId = 1; 
+            loadform(new attendancePage(studentId));
         }
 
         private void label4_Click(object sender, EventArgs e)
