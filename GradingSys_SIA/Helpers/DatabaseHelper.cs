@@ -6,7 +6,7 @@ namespace GradingSys_SIA.Helpers
 {
     public static class DatabaseHelper
     {
-        private static string connStr = "server=localhost;user id=root;password=;database=grade_sia";
+        private static string connStr = "server=localhost;user id=root;password=;database=sia_db";
 
         public static int GetAttendanceDays(int studentId, string term)
         {
