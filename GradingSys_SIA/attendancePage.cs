@@ -19,29 +19,29 @@ namespace GradingSys_SIA
         {
             InitializeComponent();
             this.studentId = studentId;
-            LoadAttendanceScore();
+            //LoadAttendanceScore();
         }
 
-        private void LoadAttendanceScore()
-        {
+        //private void LoadAttendanceScore()
+        //{
             
-            string term = "Midterm";
-            int totalDays = 15;
-            int daysPresent = DatabaseHelper.GetAttendanceDays(studentId, term);
-            int daysAbsent = totalDays - daysPresent;
+        //    string term = "Midterm";
+        //    int totalDays = 15;
+        //    int daysPresent = DatabaseHelper.GetAttendanceDays(studentId, term);
+        //    int daysAbsent = totalDays - daysPresent;
 
             
-            double attendanceTotal = (daysPresent / 8.0) * 100;
-            double attendancePercent = (attendanceTotal / 100.0) * 30;
+        //    double attendanceTotal = (daysPresent / 8.0) * 100;
+        //    double attendancePercent = (attendanceTotal / 100.0) * 30;
 
             
-            labelDaysPresent.Text = daysPresent.ToString();
-            labelDaysAbsent.Text = daysAbsent.ToString();
-            labelAttendanceFinal.Text = attendancePercent.ToString("F2");
+        //    labelDaysPresent.Text = daysPresent.ToString();
+        //    labelDaysAbsent.Text = daysAbsent.ToString();
+        //    labelAttendanceFinal.Text = attendancePercent.ToString("F2");
 
             
-            circularProgressBarAttendance.Value = (int)attendancePercent;
-        }
+        //    circularProgressBarAttendance.Value = (int)attendancePercent;
+        //}
 
     }
 }

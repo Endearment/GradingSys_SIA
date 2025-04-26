@@ -19,70 +19,70 @@ namespace GradingSys_SIA
         {
             InitializeComponent();
             studentId = id;
-            LoadExamGrades();
+            //LoadExamGrades();
         }
 
-        private void LoadExamGrades()
-        {
+        //private void LoadExamGrades()
+        //{
            
-            (int midScore, int midTotal) = DatabaseHelper.GetExamData(studentId, "Midterm");
-            double midExam = GradeCalculator.ComputeExamPercent(midScore, midTotal);
+        //    (int midScore, int midTotal) = DatabaseHelper.GetExamData(studentId, "Midterm");
+        //    double midExam = GradeCalculator.ComputeExamPercent(midScore, midTotal);
 
-            int midAttendanceDays = DatabaseHelper.GetAttendanceDays(studentId, "Midterm");
-            double midAttendance = GradeCalculator.ComputeAttendancePercent(midAttendanceDays);
+        //    int midAttendanceDays = DatabaseHelper.GetAttendanceDays(studentId, "Midterm");
+        //    double midAttendance = GradeCalculator.ComputeAttendancePercent(midAttendanceDays);
 
-            int midDemerits = DatabaseHelper.GetAptitudeDemerits(studentId, "Midterm");
-            double midAptitude = GradeCalculator.ComputeAptitudePercent(midDemerits);
+        //    int midDemerits = DatabaseHelper.GetAptitudeDemerits(studentId, "Midterm");
+        //    double midAptitude = GradeCalculator.ComputeAptitudePercent(midDemerits);
 
-            double midGrade = GradeCalculator.ComputeFinalGrade(midAttendance, midAptitude, midExam);
+        //    double midGrade = GradeCalculator.ComputeFinalGrade(midAttendance, midAptitude, midExam);
 
             
-            (int finScore, int finTotal) = DatabaseHelper.GetExamData(studentId, "Finals");
-            double finExam = GradeCalculator.ComputeExamPercent(finScore, finTotal);
+        //    (int finScore, int finTotal) = DatabaseHelper.GetExamData(studentId, "Finals");
+        //    double finExam = GradeCalculator.ComputeExamPercent(finScore, finTotal);
 
-            int finAttendanceDays = DatabaseHelper.GetAttendanceDays(studentId, "Finals");
-            double finAttendance = GradeCalculator.ComputeAttendancePercent(finAttendanceDays);
+        //    int finAttendanceDays = DatabaseHelper.GetAttendanceDays(studentId, "Finals");
+        //    double finAttendance = GradeCalculator.ComputeAttendancePercent(finAttendanceDays);
 
-            int finDemerits = DatabaseHelper.GetAptitudeDemerits(studentId, "Finals");
-            double finAptitude = GradeCalculator.ComputeAptitudePercent(finDemerits);
+        //    int finDemerits = DatabaseHelper.GetAptitudeDemerits(studentId, "Finals");
+        //    double finAptitude = GradeCalculator.ComputeAptitudePercent(finDemerits);
 
-            double finGrade = GradeCalculator.ComputeFinalGrade(finAttendance, finAptitude, finExam);
+        //    double finGrade = GradeCalculator.ComputeFinalGrade(finAttendance, finAptitude, finExam);
 
            
-            double semesterGrade = GradeCalculator.ComputeSemesterGrade(midGrade, finGrade);
+        //    double semesterGrade = GradeCalculator.ComputeSemesterGrade(midGrade, finGrade);
 
-            labelMidScore.Text = midScore.ToString();
-            labelMidTotal.Text = midTotal.ToString();
-            labelMidWeighted.Text = $"{midExam:F2}%";
+        //    labelMidScore.Text = midScore.ToString();
+        //    labelMidTotal.Text = midTotal.ToString();
+        //    labelMidWeighted.Text = $"{midExam:F2}%";
 
             
-            labelFinScore.Text = finScore.ToString();
-            labelFinTotal.Text = finTotal.ToString();
-            labelFinWeighted.Text = $"{finExam:F2}%";
+        //    labelFinScore.Text = finScore.ToString();
+        //    labelFinTotal.Text = finTotal.ToString();
+        //    labelFinWeighted.Text = $"{finExam:F2}%";
 
-            labelTotalWeighted.Text = $"{(midExam + finExam):F2}%";
-
-           
-            labelMidtermSummary.Text = $"{midScore}";
-            labelFinalsSummary.Text = $"{finScore}";
-            labelSYGrade.Text = $"{semesterGrade:F2}%";
+        //    labelTotalWeighted.Text = $"{(midExam + finExam):F2}%";
 
            
-            circularprogressbar.Value = (int)(semesterGrade);
-            circularprogressbar.Text = ((int)semesterGrade).ToString();
+        //    labelMidtermSummary.Text = $"{midScore}";
+        //    labelFinalsSummary.Text = $"{finScore}";
+        //    labelSYGrade.Text = $"{semesterGrade:F2}%";
+
+           
+        //    circularprogressbar.Value = (int)(semesterGrade);
+        //    circularprogressbar.Text = ((int)semesterGrade).ToString();
 
             
-            labelMidAttendance.Text = $"{midAttendance:F0}";
-            labelMidAptitude.Text = $"{midAptitude:F0}";
-            labelMidExam.Text = $"{midExam:F0}";
-            labelMidGrade.Text = $"{midGrade:F2}";
+        //    labelMidAttendance.Text = $"{midAttendance:F0}";
+        //    labelMidAptitude.Text = $"{midAptitude:F0}";
+        //    labelMidExam.Text = $"{midExam:F0}";
+        //    labelMidGrade.Text = $"{midGrade:F2}";
 
-            labelFinAttendance.Text = $"{finAttendance:F0}";
-            labelFinAptitude.Text = $"{finAptitude:F0}";
-            labelFinExam.Text = $"{finExam:F0}";
-            labelFinGrade.Text = $"{finGrade:F2}";
+        //    labelFinAttendance.Text = $"{finAttendance:F0}";
+        //    labelFinAptitude.Text = $"{finAptitude:F0}";
+        //    labelFinExam.Text = $"{finExam:F0}";
+        //    labelFinGrade.Text = $"{finGrade:F2}";
 
-            labelOverallGrade.Text = $"{semesterGrade:F2}";
-        }
+        //    labelOverallGrade.Text = $"{semesterGrade:F2}";
+        //}
     }
 }
