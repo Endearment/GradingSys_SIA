@@ -18,25 +18,25 @@ namespace GradingSys_SIA
         public aptitudePage()
         {
             InitializeComponent();
-            LoadAptitudeScore(); 
+            //LoadAptitudeScore(); 
         }
 
-        private void LoadAptitudeScore()
-        {
-            string term = "Midterm"; 
-            int demerits = DatabaseHelper.GetAptitudeDemerits(studentId, term);
-            int totalPossible = 100;
-            int finalScore = totalPossible - demerits;
+        //private void LoadAptitudeScore()
+        //{
+        //    string term = "Midterm"; 
+        //    int demerits = DatabaseHelper.GetAptitudeDemerits(studentId, term);
+        //    int totalPossible = 100;
+        //    int finalScore = totalPossible - demerits;
 
-            double gradeContribution = GradeCalculator.ComputeAptitudePercent(demerits);
-
-            
-            labelDemeritsApplied.Text = demerits.ToString();
-            labelFinalScore.Text = finalScore.ToString();
+        //    double gradeContribution = GradeCalculator.ComputeAptitudePercent(demerits);
 
             
-            circularProgressBarAptitude.Value = (int)gradeContribution;
-        }
+        //    labelDemeritsApplied.Text = demerits.ToString();
+        //    labelFinalScore.Text = finalScore.ToString();
+
+            
+        //    circularProgressBarAptitude.Value = (int)gradeContribution;
+        //}
 
         private void label13_Click(object sender, EventArgs e)
         {

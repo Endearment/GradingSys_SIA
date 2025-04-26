@@ -7,16 +7,22 @@ namespace GradingSys_SIA
 {
     public partial class sideBarPanel : Form
     {
+        private string cadetNumber;
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
 
-        public sideBarPanel()
+        public sideBarPanel(string cadetNumber)
         {
             InitializeComponent();
             panel2.MouseDown += new MouseEventHandler(panel2_MouseDown);
             panel2.MouseMove += new MouseEventHandler(panel2_MouseMove);
             panel2.MouseUp += new MouseEventHandler(panel2_MouseUp);
+            this.cadetNumber = cadetNumber;
+        }
+
+        public sideBarPanel()
+        {
         }
 
         private void panel2_MouseDown(object? sender, MouseEventArgs e)

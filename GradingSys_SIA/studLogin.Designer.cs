@@ -33,7 +33,7 @@
             label12 = new Label();
             label6 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtCadetNumber = new TextBox();
             btn_login = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -92,12 +92,12 @@
             label1.Text = "CADET NUMBER:";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtCadetNumber
             // 
-            textBox1.Location = new Point(418, 311);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 10;
+            txtCadetNumber.Location = new Point(418, 311);
+            txtCadetNumber.Name = "txtCadetNumber";
+            txtCadetNumber.Size = new Size(150, 31);
+            txtCadetNumber.TabIndex = 10;
             // 
             // btn_login
             // 
@@ -119,7 +119,7 @@
             BackColor = Color.FromArgb(75, 83, 32);
             ClientSize = new Size(800, 450);
             Controls.Add(btn_login);
-            Controls.Add(textBox1);
+            Controls.Add(txtCadetNumber);
             Controls.Add(label1);
             Controls.Add(label6);
             Controls.Add(label12);
@@ -141,7 +141,7 @@
         private Label label12;
         private Label label6;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtCadetNumber;
         private Button btn_login;
     }
 }

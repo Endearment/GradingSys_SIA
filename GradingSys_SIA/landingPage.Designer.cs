@@ -34,14 +34,12 @@
             label11 = new Label();
             label10 = new Label();
             label7 = new Label();
-            circularProgressBar1 = new CircularProgressBar();
             panel3 = new Panel();
             label8 = new Label();
             panel4 = new Panel();
-            circularProgressBar2 = new CircularProgressBar();
             panel5 = new Panel();
             label9 = new Label();
-            circularProgressBar3 = new CircularProgressBar();
+            lblCadetName = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
@@ -52,6 +50,7 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
+            panel2.Controls.Add(lblCadetName);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label11);
             panel2.Controls.Add(label10);
@@ -83,11 +82,11 @@
             // label10
             // 
             label10.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(39, 63);
+            label10.Location = new Point(87, 64);
             label10.Name = "label10";
-            label10.Size = new Size(459, 63);
+            label10.Size = new Size(288, 63);
             label10.TabIndex = 0;
-            label10.Text = "Welcome back, Trias!";
+            label10.Text = "Welcome back, ";
             label10.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -102,33 +101,10 @@
             label7.Text = "Aptitude";
             label7.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // circularProgressBar1
-            // 
-            circularProgressBar1.BackColor = Color.White;
-            circularProgressBar1.BarColor1 = Color.DarkBlue;
-            circularProgressBar1.BarColor2 = Color.White;
-            circularProgressBar1.BarWidth = 14F;
-            circularProgressBar1.Font = new Font("Segoe UI", 15F);
-            circularProgressBar1.ForeColor = Color.Indigo;
-            circularProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar1.LineColor = Color.Indigo;
-            circularProgressBar1.LineWidth = 1;
-            circularProgressBar1.Location = new Point(13, 102);
-            circularProgressBar1.Maximum = 100L;
-            circularProgressBar1.MinimumSize = new Size(100, 100);
-            circularProgressBar1.Name = "circularProgressBar1";
-            circularProgressBar1.ProgressShape = CircularProgressBar._ProgressShape.Flat;
-            circularProgressBar1.Size = new Size(271, 271);
-            circularProgressBar1.TabIndex = 1;
-            circularProgressBar1.Text = "57";
-            circularProgressBar1.TextMode = CircularProgressBar._TextMode.Percentage;
-            circularProgressBar1.Value = 57L;
-            // 
             // panel3
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(label7);
-            panel3.Controls.Add(circularProgressBar1);
             panel3.Location = new Point(11, 248);
             panel3.Name = "panel3";
             panel3.Size = new Size(300, 438);
@@ -150,39 +126,15 @@
             // 
             panel4.BackColor = Color.White;
             panel4.Controls.Add(label8);
-            panel4.Controls.Add(circularProgressBar2);
             panel4.Location = new Point(319, 248);
             panel4.Name = "panel4";
             panel4.Size = new Size(300, 438);
             panel4.TabIndex = 7;
             // 
-            // circularProgressBar2
-            // 
-            circularProgressBar2.BackColor = Color.White;
-            circularProgressBar2.BarColor1 = Color.DarkGreen;
-            circularProgressBar2.BarColor2 = Color.White;
-            circularProgressBar2.BarWidth = 14F;
-            circularProgressBar2.Font = new Font("Segoe UI", 15F);
-            circularProgressBar2.ForeColor = Color.Green;
-            circularProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar2.LineColor = Color.Chartreuse;
-            circularProgressBar2.LineWidth = 1;
-            circularProgressBar2.Location = new Point(14, 102);
-            circularProgressBar2.Maximum = 100L;
-            circularProgressBar2.MinimumSize = new Size(100, 100);
-            circularProgressBar2.Name = "circularProgressBar2";
-            circularProgressBar2.ProgressShape = CircularProgressBar._ProgressShape.Flat;
-            circularProgressBar2.Size = new Size(271, 271);
-            circularProgressBar2.TabIndex = 2;
-            circularProgressBar2.Text = "57";
-            circularProgressBar2.TextMode = CircularProgressBar._TextMode.Percentage;
-            circularProgressBar2.Value = 57L;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.White;
             panel5.Controls.Add(label9);
-            panel5.Controls.Add(circularProgressBar3);
             panel5.Location = new Point(624, 248);
             panel5.Name = "panel5";
             panel5.Size = new Size(300, 438);
@@ -200,27 +152,15 @@
             label9.Text = "Exam";
             label9.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // circularProgressBar3
+            // lblCadetName
             // 
-            circularProgressBar3.BackColor = Color.White;
-            circularProgressBar3.BarColor1 = Color.DarkOrange;
-            circularProgressBar3.BarColor2 = Color.White;
-            circularProgressBar3.BarWidth = 14F;
-            circularProgressBar3.Font = new Font("Segoe UI", 15F);
-            circularProgressBar3.ForeColor = Color.DarkOrange;
-            circularProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar3.LineColor = Color.SandyBrown;
-            circularProgressBar3.LineWidth = 1;
-            circularProgressBar3.Location = new Point(14, 102);
-            circularProgressBar3.Maximum = 100L;
-            circularProgressBar3.MinimumSize = new Size(100, 100);
-            circularProgressBar3.Name = "circularProgressBar3";
-            circularProgressBar3.ProgressShape = CircularProgressBar._ProgressShape.Flat;
-            circularProgressBar3.Size = new Size(271, 271);
-            circularProgressBar3.TabIndex = 3;
-            circularProgressBar3.Text = "57";
-            circularProgressBar3.TextMode = CircularProgressBar._TextMode.Percentage;
-            circularProgressBar3.Value = 57L;
+            lblCadetName.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCadetName.Location = new Point(346, 64);
+            lblCadetName.Name = "lblCadetName";
+            lblCadetName.Size = new Size(272, 63);
+            lblCadetName.TabIndex = 3;
+            lblCadetName.Text = "....";
+            lblCadetName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // landingPage
             // 
@@ -258,5 +198,6 @@
         private Panel panel5;
         private Label label9;
         private CircularProgressBar circularProgressBar3;
+        private Label lblCadetName;
     }
 }
