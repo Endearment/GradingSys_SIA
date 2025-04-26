@@ -350,14 +350,14 @@ namespace GradingSys_SIA
             // 
             // circularProgressBarAttendance
             // 
-            circularProgressBarAttendance.BackColor = SystemColors.Control;
-            circularProgressBarAttendance.BarColor1 = Color.Orange;
-            circularProgressBarAttendance.BarColor2 = Color.Orange;
+            circularProgressBarAttendance.BackColor = SystemColors.HighlightText;
+            circularProgressBarAttendance.BarColor1 = Color.DarkGreen;
+            circularProgressBarAttendance.BarColor2 = Color.White;
             circularProgressBarAttendance.BarWidth = 14F;
             circularProgressBarAttendance.Font = new Font("Segoe UI", 15F);
-            circularProgressBarAttendance.ForeColor = Color.DimGray;
+            circularProgressBarAttendance.ForeColor = Color.Green;
             circularProgressBarAttendance.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBarAttendance.LineColor = Color.DimGray;
+            circularProgressBarAttendance.LineColor = Color.Green;
             circularProgressBarAttendance.LineWidth = 1;
             circularProgressBarAttendance.Location = new Point(329, 17);
             circularProgressBarAttendance.Maximum = 100L;

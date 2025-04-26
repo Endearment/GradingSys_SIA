@@ -148,14 +148,14 @@
             // 
             // circularprogressbar
             // 
-            circularprogressbar.BackColor = SystemColors.Control;
-            circularprogressbar.BarColor1 = Color.Orange;
-            circularprogressbar.BarColor2 = Color.Orange;
+            circularprogressbar.BackColor = Color.White;
+            circularprogressbar.BarColor1 = Color.DarkOrange;
+            circularprogressbar.BarColor2 = Color.White;
             circularprogressbar.BarWidth = 14F;
             circularprogressbar.Font = new Font("Segoe UI", 15F);
-            circularprogressbar.ForeColor = Color.DimGray;
+            circularprogressbar.ForeColor = Color.Orange;
             circularprogressbar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularprogressbar.LineColor = Color.DimGray;
+            circularprogressbar.LineColor = Color.SandyBrown;
             circularprogressbar.LineWidth = 1;
             circularprogressbar.Location = new Point(36, 68);
             circularprogressbar.Maximum = 100L;
