@@ -104,14 +104,14 @@
             // 
             // circularProgressBar1
             // 
-            circularProgressBar1.BackColor = SystemColors.Control;
-            circularProgressBar1.BarColor1 = Color.Orange;
-            circularProgressBar1.BarColor2 = Color.Orange;
+            circularProgressBar1.BackColor = Color.White;
+            circularProgressBar1.BarColor1 = Color.DarkBlue;
+            circularProgressBar1.BarColor2 = Color.White;
             circularProgressBar1.BarWidth = 14F;
             circularProgressBar1.Font = new Font("Segoe UI", 15F);
-            circularProgressBar1.ForeColor = Color.DimGray;
+            circularProgressBar1.ForeColor = Color.Indigo;
             circularProgressBar1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar1.LineColor = Color.DimGray;
+            circularProgressBar1.LineColor = Color.Indigo;
             circularProgressBar1.LineWidth = 1;
             circularProgressBar1.Location = new Point(13, 102);
             circularProgressBar1.Maximum = 100L;
@@ -158,14 +158,14 @@
             // 
             // circularProgressBar2
             // 
-            circularProgressBar2.BackColor = SystemColors.Control;
-            circularProgressBar2.BarColor1 = Color.Orange;
-            circularProgressBar2.BarColor2 = Color.Orange;
+            circularProgressBar2.BackColor = Color.White;
+            circularProgressBar2.BarColor1 = Color.DarkGreen;
+            circularProgressBar2.BarColor2 = Color.White;
             circularProgressBar2.BarWidth = 14F;
             circularProgressBar2.Font = new Font("Segoe UI", 15F);
-            circularProgressBar2.ForeColor = Color.DimGray;
+            circularProgressBar2.ForeColor = Color.Green;
             circularProgressBar2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar2.LineColor = Color.DimGray;
+            circularProgressBar2.LineColor = Color.Chartreuse;
             circularProgressBar2.LineWidth = 1;
             circularProgressBar2.Location = new Point(14, 102);
             circularProgressBar2.Maximum = 100L;
@@ -202,14 +202,14 @@
             // 
             // circularProgressBar3
             // 
-            circularProgressBar3.BackColor = SystemColors.Control;
-            circularProgressBar3.BarColor1 = Color.Orange;
-            circularProgressBar3.BarColor2 = Color.Orange;
+            circularProgressBar3.BackColor = Color.White;
+            circularProgressBar3.BarColor1 = Color.DarkOrange;
+            circularProgressBar3.BarColor2 = Color.White;
             circularProgressBar3.BarWidth = 14F;
             circularProgressBar3.Font = new Font("Segoe UI", 15F);
-            circularProgressBar3.ForeColor = Color.DimGray;
+            circularProgressBar3.ForeColor = Color.DarkOrange;
             circularProgressBar3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            circularProgressBar3.LineColor = Color.DimGray;
+            circularProgressBar3.LineColor = Color.SandyBrown;
             circularProgressBar3.LineWidth = 1;
             circularProgressBar3.Location = new Point(14, 102);
             circularProgressBar3.Maximum = 100L;
